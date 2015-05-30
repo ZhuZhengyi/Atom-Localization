@@ -218,6 +218,12 @@
 					"Debug":{"value":"调试"}
 				}
             },
+			"atom-repl":{
+                "value":"atom-repl",
+				"submenu":{
+					"Run":{"value":"运行"}
+				}
+            },
 			"Autocomplete Clang":{
 				"value":"自动补全(Clang)",
 				"submenu":{
@@ -412,6 +418,17 @@
 				}
 
             },
+			"Script":{
+                "value":"脚本",
+				"submenu":{
+					"Script: Run by Line Number":{"value":"运行当前行"},
+					"Run Script":{"value":"运行脚本"},
+					"Stop Script":{"value":"停止运行"},
+					"Configure Script":{"value":"配置脚本"},
+					"Close Window and Stop Script":{"value":"关闭窗口停止运行"},
+					"Copy Run Results":{"value":"复制运行结果"}
+				}
+            },
 			"Settings View":{
                 "value":"设置",
 				"submenu":{
@@ -499,9 +516,10 @@
             "Community Discussions":{"value":"讨论区"},
             "&Documentation":{"value":"文档"},
             "Report Issue":{"value":"报告事项"},
-            "Search Issue":{"value":"查询事项"},
+            "Search Issues":{"value":"查询事项"},
             "Send Feedback":{"value":"发送回馈"},
-            "Release Notes":{"value":"版本说明"}
+            "Release Notes":{"value":"版本说明"},
+            "Welcome Guide":{"value":"欢迎向导"}
         }
     }
   }
