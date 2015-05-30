@@ -12,7 +12,7 @@
              "Split Down":{"value":"向下分割"},
              "Split Left":{"value":"向左分割"},
              "Split Right":{"value":"向右分割"},
-             "Close Pane":{"value":"关闭面板"} 
+             "Close Pane":{"value":"关闭面板"}
      }
  },
   "menu":{
@@ -211,7 +211,53 @@
     "&Packages":{
         "value":"插件",
 		"submenu":{
-			"Atom Beautify":{"value":"Atom代码优化"},
+			"Atom Beautify":{
+                "value":"代码优化",
+				"submenu":{
+					"Beautify":{"value":"优化"},
+					"Debug":{"value":"调试"}
+				}
+            },
+			"Autocomplete Clang":{
+				"value":"自动补全(Clang)",
+				"submenu":{
+					"Toggle":{"value":"切换"},
+					"Emit Precompiled Header":{"value":"预处理头文件"}
+				}
+			},
+			"Bracket Matcher":{
+				"value":"符号匹配",
+				"submenu":{
+					"Go To Matching Bracket":{"value":"跳到匹配的符合"},
+					"Select Inside Brackets":{"value":"选择括号中内容"},
+					"Remove Brackets From Selection":{"value":"删除括号"},
+					"Close Current Tag":{"value":"关闭当前标签"},
+					"Remove Matching Brackets":{"value":"删除匹配符合"}
+				}
+			},
+			"Build tools C/C++":{
+				"value":"编译工具(C/C++)",
+				"submenu":{
+					"Toggle window":{"value":"切换面板"},
+					"Run pre-configure command":{"value":"运行预配置命令"},
+					"Run configure command":{"value":"运行配置命令"},
+					"Run build command":{"value":"运行构建命令"},
+					"Show build settings":{"value":"显示构建设置"},
+					"Show all commands":{"value":"显示全部命令"}
+				}
+			},
+			"Command Palette":{
+				"value":"命令栏",
+				"submenu":{
+					"Toggle":{"value":"切换"}
+				}
+			},
+			"Dev Live Reload":{
+				"value":"配置动态载入",
+				"submenu":{
+					"Reload All Styles":{"value":"重载全部类型"}
+				}
+			},
 			"EncodingExchange":{
 				"value":"编码设置",
 				"submenu":{
@@ -219,10 +265,219 @@
 					"Convert to ...":{"value":"转化为..."}
 				}
 			},
-			"Minimap":{"value":"缩略图"},
-			"Project Manager":{"value":"项目管理"},
-			"Symbols":{"value":"符号列表"},
-			"Settings View":{"value":"设置"}
+			"git-control":{
+				"value":"Git控制面板",
+				"submenu":{
+					"Toggle":{"value":"切换显示"}
+				}
+			},
+			"Git Diff":{
+				"value":"Git比较",
+				"submenu":{
+					"Move to Next Diff":{"value":"移动到下一个Diff"},
+					"Move to Previous Diff":{"value":"移动到上一个Diff"},
+					"Toggle Diff List":{"value":"切换Diff列表"}
+				}
+			},
+			"Git Plus":{
+				"value":"Git操作",
+				"submenu":{
+					"Add":{"value":"增加"},
+					"Add All":{"value":"增加所有"},
+					"Commit":{"value":"提交"},
+					"Diff":{"value":"比较"},
+					"Diff All":{"value":"比较所有"},
+					"Add Commit":{"value":"增加提交"},
+					"Add All Commit":{"value":"增加提交所有"},
+					"Add All Commit Push":{"value":"增加提交推送"},
+					"Log":{"value":"日志"},
+					"Merge":{"value":"合并"}
+				}
+			},
+			"Hex View":{"value":"16进制视图"},
+			"Keybinding Resolver":{
+				"value":"快捷键设置",
+				"submenu":{
+					"Toggle":{"value":"切换"}
+				}
+			},
+			"Markdown Helpers":{
+				"value":"Markdown助手",
+				"submenu":{
+					"Toggle":{"value":"切换"}
+				}
+			},
+			"Markdown Preview Plus":{
+				"value":"Markdown预览",
+				"submenu":{
+					"Toggle Preview":{"value":"切换预览"},
+					"Toggle LaTex Rendering":{"value":"切换LaTex预览"}
+				}
+			},
+			"Markdown Writer":{
+				"value":"Markdown写作",
+				"submenu":{
+					"File":{
+                        "value":"文件",
+                        "submenu":{
+                            "Add New Draft":{"value":"新建草稿"},
+                            "Add New Post":{"value":"新建投稿"},
+                            "Publish Draft":{"value":"发布"}
+                        }
+                    },
+					"Front Matter":{
+                        "value":"前端事务",
+                        "submenu":{
+                            "Manage Tags":{"value":"管理标签"},
+                            "Manage Categories":{"value":"管理分类"}
+                        }
+                    },
+					"Markup":{
+                        "value":"标记",
+                        "submenu":{
+                            "Insert Link":{"value":"插入链接"},
+                            "Insert Image":{"value":"插入图片"},
+                            "Insert Table":{"value":"插入表格"},
+                            "Code":{"value":"代码"},
+                            "Code Block":{"value":"代码块"},
+                            "Bold":{"value":"粗体"},
+                            "Italic":{"value":"斜体"},
+                            "Keystroke":{"value":"关键词"},
+                            "Strikethrough":{"value":"删除线"},
+                            "Heading 1":{"value":"标题1"},
+                            "Heading 2":{"value":"标题2"},
+                            "Heading 3":{"value":"标题3"},
+                            "Heading 4":{"value":"标题4"},
+                            "Heading 5":{"value":"标题5"},
+                            "Unordered List":{"value":"无序列表"},
+                            "Ordered List":{"value":"有序列表"},
+                            "Task List":{"value":"任务列表"},
+                            "Task List(Done)":{"value":"任务列表(已完成)"},
+                            "Block quota":{"value":"块区域"}
+                        }
+                    },
+					"Helpers":{
+                        "value":"助手",
+                        "submenu":{
+                            "Jump to Next Heading":{"value":"跳转到下一个"},
+                            "Jump to Previous Heading":{"value":"跳转到上一个"},
+                            "Jump to Definition":{"value":"跳转到定义"},
+                            "Format Table":{"value":"格式化表格"},
+                            "Jump to Next Table Cell":{"value":"跳转到下一个表格单元"}
+                        }
+                    },
+					"Open Cheat Sheet":{
+                        "value":"打开表格"
+                    }
+				}
+			},
+			"Merge Conflicts":{
+				"value":"合并冲突",
+				"submenu":{
+					"Detect":{"value":"检测"}
+				}
+			},
+			"Minimap":{
+                "value":"缩略图",
+				"submenu":{
+					"Toggle":{"value":"切换"}
+				}
+            },
+			"Open On GitHub":{
+				"value":"GitHub打开",
+				"submenu":{
+					"Blame":{"value":"职责"},
+					"Branch Compare":{"value":"分支比较"},
+					"Copy URL":{"value":"复制URL"},
+					"File":{"value":"文件"},
+					"History":{"value":"历史"},
+					"Issues":{"value":"事务"},
+					"Repository":{"value":"仓库"}
+				}
+			},
+			"Package Generator":{
+				"value":"包生成器",
+				"submenu":{
+					"Generate Atom Package":{"value":"生成插件"},
+					"Generate Atom Syntax Theme":{"value":"生成主题"}
+				}
+			},
+			"Project Manager":{
+                "value":"项目管理",
+				"submenu":{
+					"Toggle":{"value":"打开"},
+					"Save Project":{"value":"保存项目"},
+					"Edit Projects":{"value":"编辑项目"},
+					"Reload Projects Settings":{"value":"重载项目设置"}
+				}
+
+            },
+			"Settings View":{
+                "value":"设置",
+				"submenu":{
+					"Open":{"value":"打开"},
+					"Show Keybindings":{"value":"显示快捷键"},
+					"Install Packages/Themes":{"value":"安装插件/主题"},
+					"Update Packages/Themes":{"value":"更新插件/主题"},
+					"Manage Packages":{"value":"管理插件"},
+					"Manage Themes":{"value":"管理主题"}
+				}
+            },
+			"Snippets":{
+                "value":"片段",
+				"submenu":{
+					"Expand":{"value":"展开"},
+					"Next Stop":{"value":"下一个"},
+					"Previous Stop":{"value":"上一个"},
+					"Available":{"value":"有效"}
+				}
+            },
+			"Symbols":{
+                "value":"符号列表",
+				"submenu":{
+					"File Symbols":{"value":"文件符号"},
+					"Project Symbols":{"value":"项目符号"}
+				}
+            },
+			"Switch header/source":{
+				"value":"切换头文件",
+				"submenu":{
+					"Toggle":{"value":"切换"}
+				}
+			},
+			"Term 2":{
+				"value":"终端",
+				"submenu":{
+					"Open New Terminal in New Tab":{"value":"在新标签中打开终端"},
+					"Open New Terminal in Right Pane":{"value":"在右面板中打开终端"},
+					"Open New Terminal in Bottom Pane":{"value":"在底面板中打开终端"},
+					"Open New Terminal in Left Pane":{"value":"在左面板中打开终端"},
+					"Open New Terminal in Top Pane":{"value":"在顶面板中打开终端"}
+				}
+			},
+			"Timecop":{
+                "value":"时间检测",
+				"submenu":{
+					"Show":{"value":"显示"}
+				}
+            },
+			"Tree View":{
+				"value":"文件树表",
+				"submenu":{
+					"Focus":{"value":"聚焦"},
+					"Toggle":{"value":"切换"},
+					"Reveal Active File":{"value":"重载有效文件"},
+					"Toggle Tree Side":{"value":"切换"}
+				}
+			},
+			"Whitespace":{
+				"value":"空格",
+				"submenu":{
+					"Remove Trailing Whitespace":{"value":"移除末尾空格"},
+					"Convert Tabs To Spaces":{"value":"Tab转换为空格"},
+					"Convert Spaces To Tabs":{"value":"空格转换为Tab"}
+				}
+			}
 		}
     },
     "&Window":{
