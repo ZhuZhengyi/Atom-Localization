@@ -300,6 +300,20 @@
 					"Merge":{"value":"合并"}
 				}
 			},
+			"Go Plus":{
+				"value":"Go操作",
+				"submenu":{
+					"Display Go Information":{"value":"显示Go信息"},
+					"Get Missing Tools":{"value":"获取缺失工具"},
+					"Update Tools":{"value":"升级工具"},
+					"Format File":{"value":"格式化文件"},
+					"Vet File":{"value":"Vet文件"},
+					"Lint File":{"value":"Lint文件"},
+					"Check File Syntax":{"value":"检查语法"},
+					"Show Test Coverage":{"value":"显示测试覆盖"},
+					"Clear Test Coverage":{"value":"清除测试覆盖"}
+				}
+			},
 			"Hex View":{"value":"16进制视图"},
 			"Keybinding Resolver":{
 				"value":"快捷键设置",
@@ -390,7 +404,7 @@
 				}
             },
 			"Open On GitHub":{
-				"value":"GitHub打开",
+				"value":"打开GitHub",
 				"submenu":{
 					"Blame":{"value":"职责"},
 					"Branch Compare":{"value":"分支比较"},
@@ -418,6 +432,16 @@
 				}
 
             },
+			"Run Command":{
+				"value":"运行命令",
+				"submenu":{
+					"Run a command":{"value":"运行命令"},
+					"Set working directory":{"value":"设置运行目录"},
+					"Re-run last command":{"value":"重复上一次命令"},
+					"Toggle command pane":{"value":"切换命令面板"},
+					"Kill last command":{"value":"结束最后命令"}
+				}
+			},
 			"Script":{
                 "value":"脚本",
 				"submenu":{
@@ -476,6 +500,21 @@
                 "value":"时间检测",
 				"submenu":{
 					"Show":{"value":"显示"}
+				}
+            },
+			"Tool Bar":{
+                "value":"工具栏",
+				"submenu":{
+					"Toggle":{"value":"切换"},
+					"Position":{
+                        "value":"位置",
+                        "submenu":{
+                            "Top":{"value":"上"},
+                            "Right":{"value":"右"},
+                            "Bottom":{"value":"下"},
+                            "Left":{"value":"左"}
+                        }
+                    }
 				}
             },
 			"Tree View":{
