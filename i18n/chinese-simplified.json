@@ -211,11 +211,24 @@
     "&Packages":{
         "value":"插件",
 		"submenu":{
+			"atom-alignment":{
+                "value":"代码对齐",
+				"submenu":{
+					"Align":{"value":"对齐"},
+					"Align Multiple":{"value":"多行对齐"}
+				}
+            },
 			"Atom Beautify":{
                 "value":"代码优化",
 				"submenu":{
 					"Beautify":{"value":"优化"},
 					"Debug":{"value":"调试"}
+				}
+            },
+			"Atom Debugger":{
+                "value":"调试",
+				"submenu":{
+					"Toggle Debugging...":{"value":"切换调试面板"}
 				}
             },
 			"atom-repl":{
@@ -502,6 +515,17 @@
 					"Show":{"value":"显示"}
 				}
             },
+			"tortoise-svn":{
+				"value":"SVN",
+				"submenu":{
+					"Blame":{"value":"职责"},
+					"Commit":{"value":"提交"},
+					"Diff":{"value":"对比"},
+					"Log":{"value":"日志"},
+					"Revert":{"value":"恢复"},
+					"Update":{"value":"更新"}
+				}
+			},
 			"Tool Bar":{
                 "value":"工具栏",
 				"submenu":{
